@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, ScrollView, Image } from 'react-native'
+import { StyleSheet, Text, View, ScrollView, Image, ActivityIndicator, NetInfo } from 'react-native'
 
 const axios = require('axios')
 
@@ -41,7 +41,7 @@ class Tools extends Component {
                             </View>
                         )
                     })
-                        : console.log("Loading")}
+                        : <ActivityIndicator />}
                 </ScrollView>
             </View>
         )
