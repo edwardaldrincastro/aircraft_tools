@@ -1,5 +1,5 @@
 {
-  "name": "AircraftMaintenanceApp",
+  "name": "aircraftmaintenanceapp",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -33,5 +33,17 @@
     "assets": [
       "./src/assets/fonts/"
     ]
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwardaldrincastro/aircraft_tools.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edwardaldrincastro/aircraft_tools/issues"
+  },
+  "homepage": "https://github.com/edwardaldrincastro/aircraft_tools#readme"
 }
