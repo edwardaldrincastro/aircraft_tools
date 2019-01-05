@@ -49,12 +49,13 @@ class Tools extends Component {
                        this.setState({modalVisible: false});
                     }}>
                     <View style={{ marginTop: 22 }}>
-                        <View style={{alignItems:"center", justifyContent:"space-around"}}>
+                        <View style={{alignItems:"center", justifyContent:"space-arogund"}}>
                             <Text>{this.state.name}</Text>
+                            <Text>{this.state.description}</Text>
                             <Image source={{uri: this.state.img}} style={{height:"80%", width: "80%"}}/>
                             <Button title="Close" onPress={()=>this.setState({modalVisible:false})}></Button>
-                        </View>
-                    </View>
+                      </View>
+                      </View>
                 </Modal>
                 <ScrollView>
                     <Text style={styles.welcome}>List of Tools</Text>

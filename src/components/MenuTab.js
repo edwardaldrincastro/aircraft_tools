@@ -20,7 +20,7 @@ const MenuTab = createMaterialTopTabNavigator({
                 fontWeight: 'bold'
             },
             style: {
-                backgroundColor: '#1D44AF',
+                backgroundColor: '#059abd',
             }
         }
     })

@@ -17,7 +17,7 @@ const MainStack = createStackNavigator({
             return {
                 title: 'Scanner',
                 headerStyle: {
-                    backgroundColor: '#1D44AF',
+                    backgroundColor: '#059abd',
                 },
                 headerTitleStyle: {
                     color: '#fff',
