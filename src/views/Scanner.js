@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, ActivityIndicator, Text } from 'react-native'
 import QRCodeScanner from 'react-native-qrcode-scanner'
+import { withNavigationFocus } from "react-navigation"
 
 const axios = require('axios')
 class Scanner extends Component {
@@ -18,15 +19,14 @@ class Scanner extends Component {
   }
   render() {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} >
         <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-          <QRCodeScanner
+          {this.props.isFocused ? <QRCodeScanner
             reactivate={true}
             reactivateTimeout={3000}
             onRead={value => this.qrHandler(value)}
             showMarker={true}
-            cameraStyle={{ height: '100%', width: '100%' }}
-          />
+          cameraStyle={{ height: '100%', width: '100%' }} /> : <View/> }
         </ View>
       </View>
     )
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default Scanner
+export default withNavigationFocus(Scanner)

@@ -1,16 +1,17 @@
 import { createMaterialTopTabNavigator, createAppContainer } from "react-navigation"
-import { Tools, Scanner } from "../views"
+import { Tools, Scanner, Settings } from "../views"
 
 const MenuTab = createMaterialTopTabNavigator({
     Scanner: Scanner,
     Tools: Tools,
+    Settings: Settings,
 },
     {
         initialRouteName: 'Scanner',
         headerLayoutPreset: 'center',
         tabBarPosition: 'bottom',
         tabBarOptions: {
-            activeTintColor: '#FABB17',
+            activeTintColor: '#fff',
             inactiveTintColor: '#fff',
             indicatorStyle: {
                 backgroundColor: '#fff',
@@ -20,7 +21,7 @@ const MenuTab = createMaterialTopTabNavigator({
                 fontWeight: 'bold'
             },
             style: {
-                backgroundColor: '#059abd',
+                backgroundColor: '#28D8A1',
             }
         }
     })

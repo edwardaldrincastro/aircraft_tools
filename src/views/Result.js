@@ -12,6 +12,7 @@ class Result extends Component {
                 <Image source={{ uri: response.image }} style={{ height: '40%', width: '100%' }} />
                 <View style={styles.content}>
                     <Text style={{ fontSize: 20 }}>Name: {response.name}</Text>
+                    <Text style={{ fontSize: 22 }}>Description: {response.description}</Text>
                     <TouchableOpacity onPress={() => this.props.navigation.replace('Scanner')}>
                         <View style={styles.button}>
                             <Text style={{ color: '#fff', fontSize: 18 }}>Scan again</Text>

@@ -85,6 +85,13 @@
 		<string>NunitoSans-Bold.ttf</string>
 		<string>NunitoSans-Regular.ttf</string>
 		<string>Staatliches-Regular.ttf</string>
+		<string>RobotoBlack.ttf</string>
+		<string>RobotoBold.ttf</string>
+		<string>RobotoItalic.ttf</string>
+		<string>RobotoLight.ttf</string>
+		<string>RobotoMedium.ttf</string>
+		<string>RobotoRegular.ttf</string>
+		<string>RobotoThin.ttf</string>
 	</array>
 </dict>
 </plist>
